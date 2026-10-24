@@ -17,7 +17,7 @@ mediante una página principal y una página de detalle para cada proyecto.
 
 ## Estructura del proyecto
 
-portafolio-personal/
+Portfolio.personal-Ecotec/
 ├── index.html
 ├── Ticketing.html
 ├── Streaming.html
