@@ -352,3 +352,41 @@ body {
     padding-left: 20px;
     line-height: 1.8;
 }
+
+/* ===== Estilos finales ===== */
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .nav__list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .about,
+    .skills,
+    .projects,
+    .contact,
+    .detail {
+        padding: 40px 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
