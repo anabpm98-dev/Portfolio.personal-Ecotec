@@ -303,3 +303,52 @@ body {
 .footer__link:hover {
     color: var(--color-primary);
 }
+
+/* ===== Páginas de detalle ===== */
+.detail {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 40px;
+}
+
+.detail__back {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--color-primary);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.detail__back:hover {
+    text-decoration: underline;
+}
+
+.detail__title {
+    margin-bottom: 25px;
+    color: var(--color-primary);
+}
+
+.detail__image {
+    width: 100%;
+    max-height: 400px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.detail__section {
+    margin-bottom: 25px;
+}
+
+.detail__subtitle {
+    margin-bottom: 10px;
+}
+
+.detail__text {
+    line-height: 1.7;
+}
+
+.detail__list {
+    padding-left: 20px;
+    line-height: 1.8;
+}
