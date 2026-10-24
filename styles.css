@@ -1,1 +1,80 @@
-/*Estilos a usar*/
+:root {
+    --color-primary: #2563eb;
+    --color-dark: #1e293b;
+    --color-light: #f8fafc;
+    --font-main: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--color-light);
+    color: var(--color-dark);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 40px;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+.header__role {
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+.nav__list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav__link {
+    color: var(--color-light);
+    text-decoration: none;
+}
+
+.nav__link:hover {
+    color: var(--color-primary);
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 80px 40px;
+}
+
+.hero__text {
+    max-width: 500px;
+}
+
+.hero__title {
+    margin-bottom: 15px;
+    font-size: 2rem;
+    color: var(--color-primary);
+}
+
+.hero__description {
+    line-height: 1.6;
+}
+
+.hero__image {
+    width: 220px;
+    height: 220px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+}
