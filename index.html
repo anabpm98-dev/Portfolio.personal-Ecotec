@@ -8,11 +8,11 @@
 </head>
 <body>
     <header class="header">
-    <div class="header__brand">
-        <h1 class="header__name">Ana Belén Pincay</h1>
-        <p class="header__role">Software Development Technologist | Intelligent Systems Engineering Student</p>
-    </div>
-    <nav class="nav">
+        <div class="header__brand">
+            <h1 class="header__name">Ana Belén Pincay</h1>
+            <p class="header__role">Software Development Technologist | Intelligent Systems Engineering Student</p>
+        </div>
+        <nav class="nav">
             <ul class="nav__list">
                 <li><a class="nav__link" href="#home">Home</a></li>
                 <li><a class="nav__link" href="#about">About me</a></li>
@@ -34,7 +34,8 @@
             </div>
             <img class="hero__image" src="img/avatar.jpg" alt="Photo of Ana Belén Pincay">
         </section>
-                <section class="about" id="about">
+
+        <section class="about" id="about">
             <h2 class="section__title">About me</h2>
             <p class="about__text">
                 I am a software development technologist currently studying
@@ -77,8 +78,72 @@
                 </article>
             </div>
         </section>
+
+        <section class="projects" id="projects">
+            <h2 class="section__title">Projects</h2>
+            <div class="projects__list">
+                <article class="project">
+                    <img class="project__image" src="img/ticketing_emelec.jpeg" alt="Ticketing and event access project">
+                    <h3 class="project__name">Ticketing and Event Access</h3>
+                    <p class="project__description">
+                        Preparation and management of tickets, coupons and
+                        accreditations for sports and entertainment events.
+                    </p>
+                    <a class="project__link" href="#">Read more</a>
+                </article>
+                <article class="project">
+                    <img class="project__image" src="img/streaming_show593.jpeg" alt="Sports event streaming project">
+                    <h3 class="project__name">Sports Event Streaming</h3>
+                    <p class="project__description">
+                        Audiovisual production and live streaming of padel
+                        and football tournaments.
+                    </p>
+                    <a class="project__link" href="#">Read more</a>
+                </article>
+                <article class="project">
+                    <img class="project__image" src="img/control_de_accesos.jpeg" alt="Access control at a mass event">
+                    <h3 class="project__name">Access Control at Mass Events</h3>
+                    <p class="project__description">
+                        Coordination of staff and entry flow for large public events.
+                    </p>
+                    <a class="project__link" href="#">Read more</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2 class="section__title">Contact</h2>
+            <div class="contact__content">
+                <div class="contact__info">
+                    <h3 class="contact__subtitle">Let's connect</h3>
+                    <p class="contact__text">
+                        I am open to new opportunities and collaborations.
+                    </p>
+                    <ul class="contact__list">
+                        <li><a class="contact__link" href="https://github.com/anabpm98-dev">GitHub</a></li>
+                        <li><a class="contact__link" href="https://www.linkedin.com/in/ana-belen-pincay-500356185?utm_source=share_via&utm_content=profile&utm_medium=member_android">LinkedIn</a></li>
+                    </ul>
+                </div>
+
+                <form class="form">
+                    <label class="form__label" for="name">Name</label>
+                    <input class="form__input" type="text" id="name" name="name" placeholder="Your name">
+
+                    <label class="form__label" for="email">Email</label>
+                    <input class="form__input" type="email" id="email" name="email" placeholder="your@email.com">
+
+                    <label class="form__label" for="message">Message</label>
+                    <textarea class="form__input form__textarea" id="message" name="message" rows="5" placeholder="Write your message here"></textarea>
+
+                    <button class="form__button" type="submit">Send</button>
+                </form>
+            </div>
+        </section>
     </main>
 
-    <footer></footer>
+    <footer class="footer">
+        <p class="footer__text">&copy; 2026 Ana Belén Pincay</p>
+        <a class="footer__link" href="https://github.com/TU-USUARIO">GitHub profile</a>
+    </footer>
 </body>
 </html>

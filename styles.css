@@ -1,10 +1,14 @@
+/* ===== Variables ===== */
 :root {
     --color-primary: #2563eb;
+    --color-primary-dark: #1d4ed8;
     --color-dark: #1e293b;
+    --color-darker: #0f172a;
     --color-light: #f8fafc;
     --font-main: Arial, Helvetica, sans-serif;
 }
 
+/* ===== Base ===== */
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +21,13 @@ body {
     color: var(--color-dark);
 }
 
+.section__title {
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--color-primary);
+}
+
+/* ===== Header y navegación ===== */
 .header {
     display: flex;
     justify-content: space-between;
@@ -48,6 +59,7 @@ body {
     color: var(--color-primary);
 }
 
+/* ===== Sección principal ===== */
 .hero {
     display: flex;
     justify-content: center;
@@ -76,14 +88,10 @@ body {
     flex-shrink: 0;
     border-radius: 50%;
     object-fit: cover;
-    object-position: center 10%;
-}
-.section__title {
-    margin-bottom: 30px;
-    text-align: center;
-    color: var(--color-primary);
+    object-position: center 15%;
 }
 
+/* ===== Sobre mí ===== */
 .about {
     max-width: 800px;
     margin: 0 auto;
@@ -95,6 +103,7 @@ body {
     text-align: center;
 }
 
+/* ===== Habilidades ===== */
 .skills {
     padding: 60px 40px;
     background-color: var(--color-dark);
@@ -126,5 +135,171 @@ body {
 
 .skill__name {
     margin-bottom: 10px;
+    color: var(--color-primary);
+}
+
+/* ===== Proyectos ===== */
+.projects {
+    padding: 60px 40px;
+}
+
+.projects__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.project {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-8px);
+}
+
+.project__image {
+    width: 100%;
+    height: 180px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.project__name {
+    margin-bottom: 10px;
+    color: var(--color-primary);
+}
+
+.project__description {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.project__link {
+    color: var(--color-primary);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.project__link:hover {
+    text-decoration: underline;
+}
+
+/* ===== Contacto ===== */
+.contact {
+    padding: 60px 40px;
+    background-color: var(--color-dark);
+}
+
+.contact .section__title {
+    color: var(--color-light);
+}
+
+.contact__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact__info {
+    flex: 1;
+    min-width: 250px;
+    color: var(--color-light);
+}
+
+.contact__subtitle {
+    margin-bottom: 15px;
+    color: var(--color-primary);
+}
+
+.contact__text {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.contact__list {
+    list-style: none;
+}
+
+.contact__list li {
+    margin-bottom: 10px;
+}
+
+.contact__link {
+    color: var(--color-light);
+    text-decoration: none;
+}
+
+.contact__link:hover {
+    color: var(--color-primary);
+}
+
+/* ===== Formulario ===== */
+.form {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 280px;
+    max-width: 500px;
+}
+
+.form__label {
+    color: var(--color-light);
+}
+
+.form__input {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-family: var(--font-main);
+    font-size: 1rem;
+}
+
+.form__textarea {
+    resize: vertical;
+}
+
+.form__button {
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form__button:hover {
+    background-color: var(--color-primary-dark);
+}
+
+/* ===== Pie de página ===== */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: var(--color-darker);
+    color: var(--color-light);
+}
+
+.footer__link {
+    color: var(--color-light);
+    text-decoration: none;
+}
+
+.footer__link:hover {
     color: var(--color-primary);
 }
